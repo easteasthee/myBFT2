@@ -1,0 +1,70 @@
+version: '3.9'
+
+services:
+  service1:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - type: bind
+        source: .
+        target: /root
+    environment:
+      - RUST_VERSION=nightly
+    command: python3 /root/server.py  # HTTP 서버 실행
+    networks:
+      - my_network
+    ports:
+      - "8000:8000"  # 서버 접근을 위해 포트 매핑
+
+  service2:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - type: bind
+        source: .
+        target: /root
+    environment:
+      - RUST_VERSION=nightly
+    command: python3 /root/client.py  # HTTP 클라이언트 실행
+    networks:
+      - my_network
+    depends_on:
+      - service1  # service1이 실행된 후에 service2를 시작
+
+  service3:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - type: bind
+        source: .
+        target: /root
+    environment:
+      - RUST_VERSION=nightly
+    command: python3 /root/client.py  # HTTP 클라이언트 실행
+    networks:
+      - my_network
+    depends_on:
+      - service1  # service1이 실행된 후에 service3를 시작
+
+  service4:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - type: bind
+        source: .
+        target: /root
+    environment:
+      - RUST_VERSION=nightly
+    command: python3 /root/client.py  # HTTP 클라이언트 실행
+    networks:
+      - my_network
+    depends_on:
+      - service1  # service1이 실행된 후에 service4를 시작
+
+networks:
+  my_network:
+    driver: bridge
