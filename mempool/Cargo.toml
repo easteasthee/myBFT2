@@ -1,29 +1,3 @@
-[package]
-name = "mempool"
-version = "0.1.0"
-edition = "2021"
-
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
-
-[dependencies]
-tokio = { version = "1.3.0", features = ["rt", "net", "time", "macros", "sync"] }
-tokio-util = { version = "0.6.4", features= ["codec"] }
-ed25519-dalek = "1.0.1"
-thiserror = "1.0.21"
-serde = { version = "1.0", features = ["derive"] }
-bytes = "1.0.1"
-bincode = "1.3.1"
-log = "0.4.0"
-futures = "0.3.13"
-base64 = "0.13.0"
-
-crypto = { path = "../crypto" }
-store = { path = "../store" }
-network = { path = "../network" }
-consensus = { path = "../consensus" }
-
-[dev-dependencies]
-rand = "0.7.3"
-
-[features]
-benchmark = []
+version https://git-lfs.github.com/spec/v1
+oid sha256:97677e56f78acd6543e54533934d23bfe23792881371ca2ddd5b764ead2e4a15
+size 692
