@@ -1,4 +1,4 @@
-/home/donghee/Downloads/myParbft1_tst filter=lfs diff=lfs merge=lfs -text
+/home/donghee/Downloads/myBFT1_tst filter=lfs diff=lfs merge=lfs -text
 *.log filter=lfs diff=lfs merge=lfs -text
 *.json filter=lfs diff=lfs merge=lfs -text
 *.py filter=lfs diff=lfs merge=lfs -text
@@ -23,10 +23,10 @@
 *.toml filter=lfs diff=lfs merge=lfs -text
 *.yml filter=lfs diff=lfs merge=lfs -text
 .dockerfile filter=lfs diff=lfs merge=lfs -text
-/home/donghee/Downloads/myParbft1_tst/store/.db_test_read_notify/OPTIONS-000007 filter=lfs diff=lfs merge=lfs -text
-/home/donghee/Downloads/myParbft1_tst/store/.db_test_read_notify/LOG filter=lfs diff=lfs merge=lfs -text
-/home/donghee/Downloads/myParbft1_tst/store/.db_test_create_store/LOG filter=lfs diff=lfs merge=lfs -text
-/home/donghee/Downloads/myParbft1_tst/store/.db_test_read_unknown_key/LOG filter=lfs diff=lfs merge=lfs -text
-/home/donghee/Downloads/myParbft1_tst/store/.db_test_read_write_value/LOG filter=lfs diff=lfs merge=lfs -text
-/home/donghee/Downloads/myParbft1_tst/target/CACHEDIR.TAG filter=lfs diff=lfs merge=lfs -text
+/home/donghee/Downloads/myBFT1_tst/store/.db_test_read_notify/OPTIONS-000007 filter=lfs diff=lfs merge=lfs -text
+/home/donghee/Downloads/myBFT1_tst/store/.db_test_read_notify/LOG filter=lfs diff=lfs merge=lfs -text
+/home/donghee/Downloads/myBFT1_tst/store/.db_test_create_store/LOG filter=lfs diff=lfs merge=lfs -text
+/home/donghee/Downloads/myBFT1_tst/store/.db_test_read_unknown_key/LOG filter=lfs diff=lfs merge=lfs -text
+/home/donghee/Downloads/myBFT1_tst/store/.db_test_read_write_value/LOG filter=lfs diff=lfs merge=lfs -text
+/home/donghee/Downloads/myBFT1_tst/target/CACHEDIR.TAG filter=lfs diff=lfs merge=lfs -text
 target/debug/build/librocksdb-sys-217a68011bb52ddc/out/librocksdb.a filter=lfs diff=lfs merge=lfs -text
